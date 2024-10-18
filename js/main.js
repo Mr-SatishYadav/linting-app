@@ -8,7 +8,7 @@ function fibonacciSeries(n) {
 
 function printFibonacciSeries(n) {
 	const series = fibonacciSeries(n);
-	console.log(series.join(', '));
+	console.log(series.join(", "));
 }
 
 // Example usage:

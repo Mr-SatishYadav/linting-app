@@ -1,24 +1,24 @@
-import globals from 'globals';
-import pluginJs from '@eslint/js';
+import globals from "globals";
+import pluginJs from "@eslint/js";
 
 export default [
-	{ files: ['**/*.js'], languageOptions: { sourceType: 'script' } },
+	{ files: ["**/*.js"], languageOptions: { sourceType: "script" } },
 	{ languageOptions: { globals: globals.browser } },
 	pluginJs.configs.recommended,
 	{
 		rules: {
-			'no-unreachable': 'off',
+			"no-unreachable": "off",
 		},
 	},
 	{
 		rules: {
-			'no-unreachable': 'error',
+			"no-unreachable": "error",
 		},
 	},
 	{
 		rules: {
-			'no-unreachable': 'warn',
-      "quotes":["error", "single"]
+			"no-unreachable": "warn",
+			quotes: ["error", "double"],
 		},
 	},
 ];
